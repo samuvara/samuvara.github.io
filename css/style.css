@@ -1,3 +1,6 @@
+/* ====== Google Fonts ====== */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap');
+
 /* ====== Base Styles ====== */
 :root {
     /* Pastel colors palette */
@@ -10,6 +13,22 @@
     --text-color: #3a3a3a; /* Dark gray for text */
     --shadow-color: rgba(0, 0, 0, 0.1);
     --transition-speed: 0.3s;
+    
+    /* Variabili per lo sfondo animato */
+    --bg-grid: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC");
+}
+
+/* ====== Keyframes per animazione sfondo ====== */
+@keyframes bg-scrolling-reverse {
+    100% { 
+        background-position: 50px 50px; 
+    }
+}
+
+@keyframes bg-scrolling {
+    0% { 
+        background-position: 50px 50px; 
+    }
 }
 
 * {
@@ -22,7 +41,14 @@ body {
     font-family: 'EB Garamond', serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--background-color);
+    
+    /* Sfondo animato con overlay colorato lilla */
+    background: 
+        linear-gradient(rgba(181, 138, 192, 0.08), rgba(181, 138, 192, 0.08)),
+        var(--bg-grid) repeat 0 0;
+    
+    /* Animazione dello sfondo */
+    animation: bg-scrolling-reverse 0.92s infinite linear;
 }
 
 .container {
@@ -113,6 +139,17 @@ main {
 
 section {
     margin-bottom: 3rem;
+}
+
+.card-background {
+    /*background-color: #c774e0c5;*/
+    background-color: var(--neutral-light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    transition: transform var(--transition-speed);
 }
 
 /* About Me Page */
@@ -336,17 +373,6 @@ section {
     margin: 0 auto;
 }
 
-/* .timeline::after {
-    content: '';
-    position: absolute;
-    width: 3px;
-    background-color: var(--primary-color);
-    top: 0;
-    bottom: 0;
-    left: 120px;
-    margin-left: -1.5px;
-} */
-
 .experience-item {
     display: flex;
     gap: 2rem;
@@ -380,7 +406,7 @@ section {
     border-radius: 50%;
     top: 15px;
     left: -30px;
-    box-shadow: 0 0 0 4px rgba(229, 193, 193, 0.3);
+    box-shadow: 0 0 0 4px rgba(181, 138, 192, 0.3);
 }
 
 .company-name {
