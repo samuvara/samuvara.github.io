@@ -336,7 +336,7 @@ section {
     margin: 0 auto;
 }
 
-.timeline::after {
+/* .timeline::after {
     content: '';
     position: absolute;
     width: 3px;
@@ -345,7 +345,7 @@ section {
     bottom: 0;
     left: 120px;
     margin-left: -1.5px;
-}
+} */
 
 .experience-item {
     display: flex;
