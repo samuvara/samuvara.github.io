@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work Experience - Samuel Varano</title>
+    <title>Samuel Varano - CV</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,42 +17,50 @@
 <body>
     <header>
         <div class="container">
-            <h1 class="name">Samuel Varano</h1>
+            <h1 class="name" data-lang="title_screen">Samuel Varano's Site</h1>
             <nav>
                 <ul>
-                    <li><a href="../index.html">About Me</a></li>
-                    <li><a href="it_work.html">IT Work</a></li>
-                    <li class="active"><a href="experience.html">Experience</a></li>
+                    <li><a href="../index.html" data-lang="about_me">About Me</a></li>
+                    <li><a href="it_work.html" data-lang="it_works">IT Work</a></li>
+                    <li class="active"><a href="experience.html" data-lang="experience">Experience</a></li>
                 </ul>
+
             </nav>
+
+            <select id="language-switcher">
+                <option value="en">English</option>
+                <option value="it">Italiano</option>
+                <option value="es">Español</option>
+            </select>
         </div>
     </header>
 
     <main>
         <div class="container">
             <section class="experience">
-                <h2>Work Experience</h2>
+                <h2 data-lang="work_experience">Work Experience</h2>
 
                 <div class="timeline">
                     <div class="experience-item">
                         <div class="experience-date">
-                            <span>06/2024 - Present</span>
+                            <span data-lang="experience_date_06_2024">06/2024 - Present</span>
                         </div>
                         <div class="experience-content">
-                            <h3>Software Developer</h3>
-                            <p class="company-name">Advanced Microwave Engeneering S.R.L.</p>
-                            <p>
+                            <h3 data-lang="software_developer">Software Developer</h3>
+                            <p class="company-name" data-lang="advanced_microwave">Advanced Microwave Engeneering S.R.L.
+                            </p>
+                            <p data-lang="exp_software_dev_desc">
                                 Within the company my role is as a software developer and tester.
                                 Specifically, I have contributed to make changes and updates but also to start building
                                 applications aimed at safety at work.
                                 In fact, the common goal of the company is to develop systems for worker safety within
                                 workplaces such as
-                                construction sites or large warehouses.
+                                construction sites or large warehouses.<br>
 
-                                Technical part:
+                                Technical part:<br>
                                 Software development with Java and Flutter and use of Android Studio for developing and
                                 modifying applications in
-                                android.
+                                android.<br>
                                 Testing phase in Java using NetBeans testing environment.
                             </p>
                         </div>
@@ -60,62 +68,83 @@
 
                     <div class="experience-item">
                         <div class="experience-date">
-                            <span>09/2023 - 02/2024</span>
+                            <span data-lang="experience_date_09_2023">09/2023 - 02/2024</span>
                         </div>
                         <div class="experience-content">
-                            <h3>Jr Software Developer</h3>
-                            <p class="company-name">Softec S.P.A.</p>
-                            <p>Description</p>
-                            <p>During the internship I learned:
-                                Problem Solving method for solving queries.
-                                New programming languages such as PHP and WordPress with in-depth study of JavaScript,
-                                HTML5 and CSS.
-                                Team Working skills and ability to work under pressure.
-                                Smart-Working Aptitude.</p>
+                            <h3 data-lang="jr_software_developer">Jr Software Developer</h3>
+                            <p class="company-name" data-lang="softec_spa">Softec S.P.A.</p>
+                            <p><span data-lang="exp_internship_learned">During the internship I learned:</span><br>
+                                <span data-lang="exp_problem_solving">Problem Solving method for solving
+                                    queries.</span><br>
+                                <span data-lang="exp_new_languages">New programming languages such as PHP and WordPress
+                                    with in-depth study of JavaScript, HTML5 and CSS.</span><br>
+                                <span data-lang="exp_team_working">Team Working skills and ability to work under
+                                    pressure.</span><br>
+                                <span data-lang="exp_smart_working">Smart-Working Aptitude.</span>
+                            </p>
                         </div>
                     </div>
 
                     <div class="experience-item">
-                        <div class="experience-date">
-                            <span>11/2022 - 05/2023</span>
-                        </div>
-                        <div class="experience-content">
-                            <h3>Jr Front-End Developer</h3>
-                            <p class="company-name">Omnia Group S.R.L.</p>
-                            <p>Description</p>
-                            <p>Within the internship I had the opportunity to interface and to contributate with the
-                                development of user interfaces and web apps on the Front-End side, going to build all
-                                the part of the user registration forms and differentiating by basic user and business
-                                user; I also developed the post login user interfaces differentiating them mainly in two
-                                parts: a first one that corresponds to the basic user side and is the customer
-                                interface, a second one that corresponds to the business side and is the interface
-                                dedicated to companies. Also, although in a minor way, I learned the implementation of a
-                                smart contract and its use so that it can be made usable within the developed web app.
+                        <div class="experience-item">
+                            <div class="experience-date">
+                                <span data-lang="experience_date_11_2022">11/2022 - 05/2023</span>
+                            </div>
+                            <div class="experience-content">
+                                <h3 data-lang="jr_frontend_developer">Jr Front-End Developer</h3>
+                                <p class="company-name" data-lang="omnia_group">Omnia Group S.R.L.</p> to interface and
+                                to contributate with the
+                                <p data-lang="exp_frontend_desc">Within the internship I had the opportunity to
+                                    interface and to contributate with the
+                                    development of user interfaces and web apps on the Front-End side, going to build
+                                    all
+                                    the part of the user registration forms and differentiating by basic user and
+                                    business
+                                    user; I also developed the post login user interfaces differentiating them mainly in
+                                    two
+                                    parts: a first one that corresponds to the basic user side and is the customer
+                                    interface, a second one that corresponds to the business side and is the interface
+                                    dedicated to companies. Also, although in a minor way, I learned the implementation
+                                    of a
+                                    smart contract and its use so that it can be made usable within the developed web
+                                    app.
 
-                                I also got to learn how to perform some documentation steps related to a project such as
-                                making sequence diagrams, using the UML, and writing a description for certain parts of
-                                the project.
+                                    I also got to learn how to perform some documentation steps related to a project
+                                    such as
+                                    making sequence diagrams, using the UML, and writing a description for certain parts
+                                    of
+                                    the project.
 
-                                In addition to programming languages I got to improve personal skills such as those
-                                related to team-working and smart-working, as well as character skills such as
-                                concentration, compliance, seriousness in work projects and more generally a personal
-                                growth and my level of English, written and oral.
-                                Skills: Front-end Development · Web Design · Team Working· CSS · HTML · Sequence diagram
-                                · Uml · Web Development · Typescript · Solidity · Ionic · React.js · JavaScript</p>
+                                    In addition to programming languages I got to improve personal skills such as those
+                                    related to team-working and smart-working, as well as character skills such as
+                                    concentration, compliance, seriousness in work projects and more generally a
+                                    personal
+                                    growth and my level of English, written and oral.
+                                    Skills: Front-end Development · Web Design · Team Working· CSS · HTML · Sequence
+                                    diagram
+                                    · Uml · Web Development · Typescript · Solidity · Ionic · React.js · JavaScript</p>
+                            </div>
                         </div>
                     </div>
 
-                <div class="other-experience">
-                    <h3>Additional Experience</h3>
-                    <div class="additional-items">
-                        <div class="additional-item">
-                            <h4>Receptionist</h4>
-                            <p class="company-name">[03/2024 - 06/2024] - Hotel Mia Cara</p>
-                            <p>I've carried out the receptionist in a hotel in centre of Florence, mainly working two shifts, afternoon and night.
-                                Work carried out during a course in JAVA to improve my knowledge, course hosted by Adecco.</p>
+                    <div class="other-experience">
+                        <div class="other-experience">
+                            <h3 data-lang="additional_experience">Additional Experience</h3>
+                            <div class="additional-items">
+                                <div class="additional-item">
+                                    <h4 data-lang="receptionist">Receptionist</h4>
+                                    <p class="company-name" data-lang="experience_date_03_2024">[03/2024 -
+                                        06/2024] - Hotel Mia Cara</p>
+                                    <p data-lang="exp_receptionist_desc">I've carried out the receptionist in a
+                                        hotel in centre of Florence, mainly working two shifts, afternoon and
+                                        night.
+                                        Work carried out during a course in JAVA to improve my knowledge, course
+                                        hosted by Adecco.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+
             </section>
         </div>
     </main>
@@ -126,7 +155,7 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

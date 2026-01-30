@@ -1,91 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuel Varano</title>
+    <title>Samuel Varano - CV</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <header>
         <div class="container">
-            <h1 class="name">Samuel Varano</h1>
+            <h1 class="name" data-lang="title_screen">Samuel Varano's Site</h1>
             <nav>
                 <ul>
-                    <li><a href="../index.html">About Me</a></li>
-                    <li class="active"><a href="it_work.html">IT Work</a></li>
-                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="../index.html" data-lang="about_me">About Me</a></li>
+                    <li class="active"><a href="it_work.html" data-lang="it_works">IT Work</a></li>
+                    <li><a href="experience.html" data-lang="experience">Experience</a></li>
                 </ul>
             </nav>
+
+            <select id="language-switcher">
+                <option value="en">English</option>
+                <option value="it">Italiano</option>
+                <option value="es">Español</option>
+            </select>
         </div>
     </header>
 
     <main>
         <div class="container">
             <section class="it-work">
-                <h2>IT Work & Projects</h2>
-                
+                <h2 data-lang="it_work_projects">IT Work & Projects</h2>
+
                 <div class="github-profile">
-                    <h3><i class="fab fa-github"></i>GitHub Profile</h3>
-                    <p>Check out my code repositories and open-source contributions:</p>
+                    <h3 data-lang="github_profile"><i class="fab fa-github"></i>GitHub Profile</h3>
+                    <p data-lang="check_repositories">Check out my code repositories and open-source contributions:</p>
                     <a href="https://github.com/samuvara" target="_blank" class="btn">github.com/samuvara</a>
                 </div>
-                
+
                 <div class="technical-skills">
-                    <h3>Technical Skills</h3>
+                    <h3 data-lang="technical_skills">Technical Skills</h3>
                     <div class="skills-categories">
                         <div class="skill-category">
-                            <h4>Main Programming Languages</h4>
+                            <h4 data-lang="main_programming_languages">Main Programming Languages</h4>
                             <ul>
-                                <li>Dart</li>
-                                <li>Java</li>
-                                <li>JavaScript</li>
-                                <li>Php</li>
-                                <li>HTML5</li>
-                                <li>CSS</li>
-                                <li>Bash</li>
+                                <li data-lang="dart">Dart</li>
+                                <li data-lang="java">Java</li>
+                                <li data-lang="javascript">JavaScript</li>
+                                <li data-lang="php">Php</li>
+                                <li data-lang="html5">HTML5</li>
+                                <li data-lang="css">CSS</li>
+                                <li data-lang="bash">Bash</li>
                             </ul>
                         </div>
                         <div class="skill-category">
-                            <h4>Frameworks & Libraries</h4>
+                            <h4 data-lang="frameworks_libraries">Frameworks & Libraries</h4>
                             <ul>
-                                <li>Flutter</li>
-                                <li>React JS</li>
-                                <li>IONIC</li>
-                                <li>Spring</li>
+                                <li data-lang="flutter">Flutter</li>
+                                <li data-lang="react_js">React JS</li>
+                                <li data-lang="ionic">IONIC</li>
+                                <li data-lang="spring">Spring</li>
                             </ul>
                         </div>
                         <div class="skill-category">
-                            <h4>Tools & Technologies</h4>
+                            <h4 data-lang="tools_technologies">Tools & Technologies</h4>
                             <ul>
-                                <li>Android Studio</li>
-                                <li>Git technologies</li>
-                                <li>VS Code</li>
-                                <li>Wordpress</li>
-                                <li>AGILE</li>
+                                <li data-lang="android_studio">Android Studio</li>
+                                <li data-lang="git_technologies">Git technologies</li>
+                                <li data-lang="vs_code">VS Code</li>
+                                <li data-lang="wordpress">Wordpress</li>
+                                <li data-lang="agile">AGILE</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="projects">
-                    <h3>Featured Projects</h3>
+                    <h3 data-lang="featured_projects">Featured Projects</h3>
                     <div class="project-grid">
                         <div class="project-card">
                             <div class="project-content">
-                                <h4>FIT TRACKER (on going)</h4>
-                                <p>Smartphone app for gym & wellness activity</p>
+                                <h4 data-lang="fit_tracker">FIT TRACKER (on going)</h4>
+                                <p data-lang="fit_tracker_desc">Smartphone app for gym & wellness activity</p>
                                 <div class="project-technologies">
-                                    <span>Flutter</span>
-                                    <span>Documenti</span>
-                                    <span>Draw.io</span>
+                                    <span data-lang="flutter">Flutter</span>
+                                    <span data-lang="documenti">Documenti</span>
+                                    <span data-lang="draw_io">Draw.io</span>
                                 </div>
                                 <div class="project-links">
-                                    <span>UNDER WORKS</span>
+                                    <span data-lang="under_works">UNDER WORKS</span>
                                     <!-- <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
                                     <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a> -->
                                 </div>
@@ -93,39 +103,42 @@
                         </div>
                         <div class="project-card">
                             <div class="project-content">
-                                <h4>MyCurriculumVitaeSV</h4>
-                                <p>Small project about my Curriculum like a site</p>
+                                <h4 data-lang="my_curriculum_vitae">MyCurriculumVitaeSV</h4>
+                                <p data-lang="curriculum_desc">Small project about my Curriculum like a site</p>
                                 <div class="project-technologies">
-                                    <span>JavaScript</span>
-                                    <span>HTML5</span>
-                                    <span>CSS</span>
+                                    <span data-lang="javascript">JavaScript</span>
+                                    <span data-lang="html5">HTML5</span>
+                                    <span data-lang="css">CSS</span>
                                 </div>
                                 <div class="project-links">
-                                    <a href="https://github.com/samuvara/samuvara.github.io" target="_blank"><i class="fab fa-github"></i> Code</a>
+                                    <a href="https://github.com/samuvara/samuvara.github.io" target="_blank"><i
+                                            class="fab fa-github"></i> Code</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="certificates">
-                    <h3>Certifications</h3>
+                    <h3 data-lang="certifications">Certifications</h3>
                     <div class="certificate-list">
                         <div class="certificate">
-                            <h4>Ionic React: Cross-Platform Mobile Development with Ionic</h4>
-                            <p class="cert-issuer">Udemy</p>
-                            <p class="cert-date">May 2023</p>
-                            <p>Certificate of an Udemy course in Ionic React to learn Mobile Development with Ionic. ID: UC-ade73744-93f4-4c87-9fb6-c1e6a9e48319</p>
+                            <h4 data-lang="ionic_react_cert">Ionic React: Cross-Platform Mobile Development with Ionic
+                            </h4>
+                            <p class="cert-issuer" data-lang="udemy">Udemy</p>
+                            <p class="cert-date" data-lang="cert_date_may_2023">May 2023</p>
+                            <p data-lang="ionic_cert_desc">Certificate of an Udemy course in Ionic React to learn Mobile
+                                Development with Ionic. ID: UC-ade73744-93f4-4c87-9fb6-c1e6a9e48319</p>
                         </div>
                         <div class="certificate">
-                            <h4>Business English Certificate</h4>
-                            <p class="cert-issuer">Adecco</p>
-                            <p class="cert-date">July 2024</p>
+                            <h4 data-lang="business_english">Business English Certificate</h4>
+                            <p class="cert-issuer" data-lang="adecco">Adecco</p>
+                            <p class="cert-date" data-lang="cert_date_july_2024">July 2024</p>
                         </div>
                         <div class="certificate">
-                            <h4>Digital Transformation Certificate</h4>
-                            <p class="cert-issuer">Adecco</p>
-                            <p class="cert-date">September 2024</p>
+                            <h4 data-lang="digital_transformation">Digital Transformation Certificate</h4>
+                            <p class="cert-issuer" data-lang="adecco">Adecco</p>
+                            <p class="cert-date" data-lang="cert_date_september_2024">September 2024</p>
                         </div>
                     </div>
                 </div>
@@ -139,6 +152,7 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
+
 </html>
