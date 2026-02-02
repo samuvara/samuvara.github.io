@@ -3,6 +3,7 @@
     "about_me": "About me",
     "it_works": "IT Work",
     "experience": "Experience",
+    "hobby": "Hobby",
     "contact_information": "Contact Information",
     "personal_presentation_p1": "Hi, I'm Samuel.",
     "personal_presentation_p2": "I consider myself a sincere, serious, flexible and precise person, I like to learn new things and new cultures. I love working in contact with people but I don't disdain working alone on the computer. In my spare time I play sports, I value my health and fitness and when I can I love to travel. I also have created a brand called Varano Brand where I express my creativity.",
@@ -89,5 +90,7 @@
     "hotel_mia_cara": "Hotel Mia Cara",
     "experience_date_03_2024": "[03/2024 - 06/2024] - Hotel Mia Cara",
     "exp_receptionist_desc": "I've carried out the receptionist in a hotel in centre of Florence, mainly working two shifts, afternoon and night. Work carried out during a course in JAVA to improve my knowledge, course hosted by Adecco.",
-    "varano-description": "Varano Brand is more than just a brand: it is a visual identity that combines style, research, and character. Specializing in the creation of garments and products that represent Varano in every possible way, we focus on quality, authenticity, and designs that leave their mark, always keeping environmental sustainability and ecology at the forefront. We are where creativity meets nature, we are Varano Brand."
+    "varano-description": "Varano Brand is more than just a brand: it is a visual identity that combines style, research, and character. Specializing in the creation of garments and products that represent Varano in every possible way, we focus on quality, authenticity, and designs that leave their mark, always keeping environmental sustainability and ecology at the forefront. We are where creativity meets nature, we are Varano Brand.",
+    "petsittingsite": "Pet Sitting Website",
+    "petsitting_desc": "Website built for the activity of pet sitting of Letizia & Samuel. In this site you can find all the information about the service offered and book your spot or service directly just by check the disponibility calendar."
 }
